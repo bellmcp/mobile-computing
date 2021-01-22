@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HW1: HTML Layout</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link rel="stylesheet" href="./styles/bw.css" /> -->
+    <link rel="stylesheet" href="./styles/color.css" />
+  </head>
+  <body>
+    <header>
+      <h2>Cities</h2>
+    </header>
+
+    <section>
+      <nav>
+        <ul>
+          <li><a onClick="ShowLondon()">London</a></li>
+          <li><a onClick="ShowParis()">Paris</a></li>
+          <li><a onClick="ShowTokyo()">Tokyo</a></li>
+        </ul>
+      </nav>
+
+      <article>
+        <h1 id="title">London</h1>
+        <p id="content">
+          London is the capital city of England. It is the most populous city in
+          the United Kingdom, with a metropolitan area of over 13 million
+          inhabitants. Standing on the River Thames, London has been a major
+          settlement for two millennia, its history going back to its founding
+          by the Romans, who named it Londinium.
+        </p>
+      </article>
+    </section>
+
+    <footer>
+      <p>Wutipat Khamnuansin 6033657523</p>
+    </footer>
+
+    <script>
+      const title = document.getElementById("title");
+      const content = document.getElementById("content");
+
+      const london = {
+        title: "London",
+        content:
+          "London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants. Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.",
+      };
+
+      const paris = {
+        title: "Paris",
+        content:
+          "Paris is the capital city of France, and the largest city in France. The area is 105 square kilometres (41 square miles), and around 2.15 million people live there. If suburbs are counted, the population of the Paris area rises to 12 million people. The Seine river runs through the oldest part of Paris, and divides it into two parts, known as the Left Bank and the Right Bank. It is surrounded by many forests.",
+      };
+
+      const tokyo = {
+        title: "Tokyo",
+        content:
+          "Tokyo  is the capital and most populous prefecture of Japan. Located at the head of Tokyo Bay, the prefecture forms part of the Kantō region on the central Pacific coast of Japan's main island, Honshu. Tokyo is the political and economic center of the country, as well as the seat of the Emperor of Japan and the national government. In 2019, the prefecture had an estimated population of 13,929,280. The Greater Tokyo Area is the most populous metropolitan area in the world, with more than 37.393 million residents as of 2020.",
+      };
+
+      function ShowLondon() {
+        title.innerHTML = london.title;
+        content.innerHTML = london.content;
+      }
+
+      function ShowParis() {
+        title.innerHTML = paris.title;
+        content.innerHTML = paris.content;
+      }
+
+      function ShowTokyo() {
+        title.innerHTML = tokyo.title;
+        content.innerHTML = tokyo.content;
+      }
+    </script>
+  </body>
+</html>

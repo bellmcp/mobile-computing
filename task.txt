@@ -1,0 +1,33 @@
+นิสิตต้องอัพโหลดไฟล์วีดีโอการบ้าน 6 ชิ้น ตั้งชื่อไฟล์เป็น id นิสิต เช่น 1234567890_ชื่อ_นามสกุล.mp4 ขอไฟล์วีดีโอเป็น mp4 ขนาดไม่เกิน 1 GB ยิ่งเล็กยิ่งดีครับ ไฟล์ยิ่งเล็กยิ่งดีครับ แต่ภาพต้องคมชัด
+
+HW1: HTML Layout
+แสดงการจัด Layout ของหน้าเว็บตามเงื่อนไขที่กำหนด ไม่มี space ระหว่าง web page กับ browser คลิกที่ menu แล้วเปลี่ยนเนื้อหา menu ใช้ฟอนต์สีดำ ไม่ขีดเส้นใต้ แสดง source code ตรงที่ใช้ css แบบ external เปลี่ยน css จาก black & white เป็น color แล้วดูผลลัพธ์ที่ browser
+อัพโหลดไฟล์วีดีโอที่ https://drive.google.com/drive/folders/1es_sIYnVqVM7T17fmc9fuvAd2KMVZzI7?usp=sharing
+
+HW2: Tax Calculator
+แสดงเว็บคำนวณภาษีบน browser ลองป้อน input และดูว่าได้ output ถูกต้องหรือไม่ แสดง source code ด้วย
+อัพโหลดไฟล์วีดีโอที่ https://drive.google.com/drive/folders/1ZYv9XJdRmvtMPo6oyq6zZkp4b720N2YO?usp=sharing
+
+HW3: Bootstrap
+แสดง component ของ Bootstrap 10 ชิ้น ที่นิสิตเขียนโค้ดเอง บน web browser
+อัพโหลดไฟล์วีดีโอที่ https://drive.google.com/drive/folders/1jmvk3-LYUZ0hVcg1u4SP55Dv828Fg9QD?usp=sharing
+
+HW4: Responsive Design
+แสดงการจัดเรียง Card แบบ 1, 2, 3, 4, 6 คอลัมน์ ตามขนาดหน้าจอเล็กไปใหญ่
+อัพโหลดไฟล์วีดีโอที่ https://drive.google.com/drive/folders/1Cgce34OMMI2u8GrlSu95PFzgcJaA5zHG?usp=sharing
+
+HW5: PHP Web Form
+แสดง Web Form ที่ใช้สมัครสมาชิก ทดลองใส่ input ที่ไม่ถูกต้อง ในแต่ละช่อง ดูว่าโปรแกรมตรวจสอบได้หรือไม่ และมีข้อความเตือนว่า input ไม่ถูกต้องอย่างไร
+อัพโหลดไฟล์วีดีโอที่ https://drive.google.com/drive/folders/1376jiqjr5QrpRAOd9FHy4tLBCjZjKvkM?usp=sharing
+
+HW6: React
+แสดงแบบทดสอบที่มีจำนวนข้ออย่างน้อย 5 ข้อบน web browser แต่งโจทย์และตัวเลือกของแต่ละข้อใหม่ให้ต่างกัน แสดง source code ของ App.tsx และ component “Test” และ “Item”
+อัพโหลดไฟล์วีดีโอที่ https://drive.google.com/drive/folders/1Lk86W0w7wYeVTiLd9uAaXKtCy9knHEyx?usp=sharing
+
+HW7: Web API + Jason Web Token (JWT)
+เขียน API ง่าย ๆ สัก 1 อัน เช่น GET แล้ว บังคับว่าต้องมี JWT ถึงจะเรียก API นั้นได้ ทดลองเรียก API และส่ง token ไปกับ HTML Header โดยใช้โปรแกรม Postman
+อัพโหลดไฟล์วีดีโอที่ https://drive.google.com/drive/folders/1hquEjniPWsDE4dkZ4856l7g2RadeL4kn?usp=sharing
+
+HW8: Fourier Transform
+จากรูปสัญญาณใน assigment บทที่ 10 ทำ Forward Fourier Transform (FFT) เพื่อหาว่าประกอบด้วยความถี่อะไรบ้าง เป็น cosine และ sine ปริมาณ (amplitude) เท่าใด
+อัพโหลดไฟล์วีดีโอที่ https://drive.google.com/drive/folders/1IFsMWxdMd3h0DVn5dSoBxbDO1R6k8i8t?usp=sharing

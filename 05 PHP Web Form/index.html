@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title>HW5: PHP Web Form</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>สมัครสมาชิก</h1>
+    </div>
+      <div class="container">
+        <form name="register">
+          <div class="row"><div class="title">รหัสประจำตัวประชาชน*:</div><input type="text" name="citizenId" placeholder="หมายเลข 13 หลัก"></div>
+          <div class="row"><div class="title">รหัสผ่าน*:</div><input type="text" name="password" placeholder="ใช้เลข 0-9 หรือ a-z ยาว 4-10 ตัว"></div>
+          <div class="row"><div class="title">รหัสผ่านซ้ำ*:</div><input type="text" name="passwordConfirm" placeholder="ใส่รหัสผ่านซ้ำอีกครั้ง"></div>
+          <div class="row"><div class="title">วัน/เดือน/ปี เกิด*:</div><input type="date" name="dob" placeholder="dd-mm-yyyy"></div>
+          <div class="row"><div class="title">โทรศัพท์มือถือ*:</div><input type="text" name="mobileNo" placeholder="ใส่เฉพาะตัวเลข เช่น 0812345678"></div>
+          <div class="row"><div class="title">โทรศัพท์บ้าน:</div><input type="text" name="phoneNo" placeholder="Optional"></div>
+          <div class="row"><div class="title">E-mail*:</div><input type="text" name="email"></div>
+          <div class="row"><div class="title">ยืนยัน E-mail*:</div><input type="text" name="emailConfirm" placeholder="ระบุ E-mail อีกครั้ง"></div>
+          <div class="row"><div class="title">ความประสงค์ที่จะรับข่าวสาร*:</div>
+          <input type="radio" id="yes" name="newsletter" value="yes">
+          <label for="yes">ต้องการ</label>
+          <input type="radio" id="no" name="newsletter" value="no">
+          <label for="no">ไม่ต้องการ</label>
+          <div class="row">
+          <div class="container">
+            <input type="submit" onclick="validateForm()">
+          </div>
+          </div>
+        </form>
+    </div>
+
+    <script>
+    function validateForm() {
+      var citizenId = document.forms["register"]["citizenId"].value;
+      var password = document.forms["register"]["password"].value;
+      var passwordConfirm = document.forms["register"]["passwordConfirm"].value;
+      var dob = document.forms["register"]["dob"].value;
+      var mobileNo = document.forms["register"]["mobileNo"].value;
+      var phoneNo = document.forms["register"]["phoneNo"].value;
+      var email = document.forms["register"]["email"].value;
+      var emailConfirm = document.forms["register"]["emailConfirm"].value;
+      var newsletter = document.forms["register"]["newsletter"].value;
+
+      console.log(citizenId);
+    }
+    </script>
+  </body>
+</html>

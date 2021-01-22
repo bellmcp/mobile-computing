@@ -1,0 +1,144 @@
+body {
+  padding-top: 56px;
+}
+
+footer {
+  background-color: #000;
+}
+
+.jumbotron {
+  background-image: url("./assets/img/office.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 500px;
+  padding-top: 2.8rem !important;
+}
+
+.breadcrumb {
+  margin-top: 30px;
+}
+
+.alert {
+  margin: 0 !important;
+  border-radius: 0 !important;
+}
+
+.row {
+  margin: 50px 0;
+}
+
+.navbar-dark {
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(6px);
+}
+
+.nav-item {
+  margin: 0 30px;
+}
+
+.nav-item-last {
+  margin-left: 40px;
+}
+
+.carousel-item {
+  height: 80vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  filter: invert(70%);
+}
+
+.carousel-indicators li {
+  filter: invert(70%);
+}
+
+.carousel-indicators .active {
+  filter: invert(50%);
+}
+
+.carousel-caption {
+  margin-top: 30px;
+  top: 0;
+  bottom: auto;
+}
+
+.carousel-title {
+  margin: 0;
+  font-size: 3.5rem;
+}
+
+.carousel-subtitle {
+  margin: 0;
+  margin-bottom: 16px;
+  font-size: 1.5rem;
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+.modal {
+  margin-top: 160px;
+}
+
+.modal-login {
+  max-width: 320px !important;
+}
+.modal-login .modal-content {
+  border-radius: 1px;
+  border: none;
+}
+.modal-login .modal-header {
+  position: relative;
+  justify-content: center;
+  background: #f2f2f2;
+}
+.modal-login .modal-body {
+  padding: 30px;
+}
+.modal-login .modal-footer {
+  background: #f2f2f2;
+}
+.modal-login h4 {
+  text-align: center;
+  font-size: 26px;
+}
+.modal-login label {
+  font-weight: normal;
+  font-size: 13px;
+}
+.modal-login .form-control,
+.modal-login .btn {
+  min-height: 38px;
+  border-radius: 2px;
+}
+.modal-login .hint-text {
+  text-align: center;
+}
+.modal-login .close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.modal-login .checkbox-inline {
+  margin-top: 12px;
+}
+.modal-login input[type="checkbox"] {
+  position: relative;
+  top: 1px;
+}
+.modal-login .btn {
+  min-width: 100px;
+  line-height: normal;
+}
+.modal-login .hint-text a {
+  color: #999;
+}

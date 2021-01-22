@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HW2: Tax Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container extra">
+      <h1>โปรแกรมคำนวณภาษีเงินได้บุคคลธรรมดา</h1>
+    </div>
+
+    <div class="container">
+      <div class="row extra">
+        <div class="title"><label>เงินได้สุทธิต่อปี :</label></div>
+        <input type="text" id="income" />
+        <label id="unit">บาท</label>
+      </div>
+
+      <div class="row">
+        <div class="title"><label>อัตราภาษี :</label></div>
+        <input type="text" id="percent" disabled="disabled" />
+        <label>บาท</label>
+      </div>
+
+      <div class="row">
+        <div class="title"><label>จำนวนภาษีที่ต้องจ่าย :</label></div>
+        <input type="text" id="result" disabled="disabled" />
+        <label>บาท</label>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row extra"><span id="error_msg" class="error"></span></div>
+      <div class="row">
+        <input
+          type="button"
+          value="คำนวณภาษี"
+          class="button"
+          onclick="calculateTax()"
+        />
+      </div>
+    </div>
+
+    <div class="footer">
+      <span class="copyright">Wutipat Khamnuansin 6033657523</span>
+    </div>
+
+    <script>
+      function calculateTax() {
+        const error_msg = document.getElementById("error_msg");
+        var income = document.getElementById("income").value;
+
+        if (isNaN(income)) {
+          error_msg.innerHTML = "โปรดกรอกข้อมูลเป็นตัวเลข";
+        } else if (income <= 0) {
+          error_msg.innerHTML = "โปรดกรอกข้อมูลเป็นตัวเลข ที่มีค่ามากกว่า 0";
+        } else {
+          resetErrorMessage();
+          if (income >= 0 && income <= 150000) {
+            updateResult(income, 0);
+          } else if (income >= 150001 && income <= 300000) {
+            updateResult(income, 0.05);
+          } else if (income >= 300001 && income <= 500000) {
+            updateResult(income, 0.1);
+          } else if (income >= 500001 && income <= 750000) {
+            updateResult(income, 0.15);
+          } else if (income >= 750001 && income <= 1000000) {
+            updateResult(income, 0.2);
+          } else if (income >= 1000001 && income <= 2000000) {
+            updateResult(income, 0.25);
+          } else if (income >= 2000001 && income <= 5000000) {
+            updateResult(income, 0.3);
+          } else if (income >= 5000001) {
+            updateResult(income, 0.35);
+          }
+        }
+      }
+
+      function updateResult(income, percent) {
+        const output_percent = document.getElementById("percent");
+        const output_result = document.getElementById("result");
+
+        if (percent == 0) {
+          output_percent.value = "ได้รับการยกเว้น";
+          output_result.value = 0;
+        } else {
+          output_percent.value = percent * 100 + "%";
+          output_result.value = income * percent;
+        }
+      }
+
+      function resetErrorMessage() {
+        error_msg.innerHTML = "";
+      }
+    </script>
+  </body>
+</html>
